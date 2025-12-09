@@ -1,63 +1,80 @@
 # 🏥 Healthcare Analytics Project
 
 ## 📌 Overview
-مشروع تحليلات لمركز طبي يهدف إلى جمع وتنظيف وتحليل بيانات المرضى، الأطباء، المواعيد، الإيرادات والمصروفات، ثم عرضها في داشبورد تفاعلي باستخدام **Power BI** مع دعم تحليل البيانات عبر **Python** و **SQL**.
+A comprehensive healthcare analytics project designed to collect, clean, and analyze medical center data including patients, doctors, appointments, revenue, and expenses. The project provides interactive dashboards using **Power BI** with advanced data analysis capabilities using **Python** and **SQL**.
+
+مشروع تحليلات صحية شامل مصمم لجمع وتنظيف وتحليل بيانات المركز الطبي بما في ذلك المرضى والأطباء والمواعيد والإيرادات والمصروفات. يوفر المشروع لوحات معلومات تفاعلية باستخدام **Power BI** مع قدرات تحليل بيانات متقدمة باستخدام **Python** و **SQL**.
 
 ---
 
-## 👥 Team Members
-| Name                     | Role                          | GitHub Profile |
-
 ## 📂 Project Structure
 ```
-Healthcare-Analytics-Project/
-├── data_raw/                # ملفات البيانات الخام (Excel, CSV)
-├── data_processed/          # البيانات بعد المعالجة
-├── sql_scripts/              # سكربتات SQL
-├── python_scripts/           # سكربتات بايثون
-├── powerbi_dashboard/        # ملفات Power BI
-├── docs/                     # وثائق المشروع ولقطات الشاشة
-│   └── screenshots/
-└── README.md
+Healthcare-Analytics/
+├── data_raw/              # Raw data files (Excel, CSV)
+├── data_processed/        # Processed data files
+├── sql_scripts/           # SQL scripts for data analysis
+├── python_scripts/        # Python scripts for data processing
+├── powerbi_dashboard/     # Power BI dashboard files
+├── LICENSE               # Project license
+└── README.md             # Project documentation
 ```
 
 ---
 
 ## 🛠️ Requirements
-- Python 3.8+
-- مكتبات: `pandas`, `numpy`, `matplotlib`, `scikit-learn`
-- Power BI Desktop
-- Git
+- **Python 3.8+** with libraries: `pandas`, `numpy`, `matplotlib`, `scikit-learn`
+- **Power BI Desktop**
+- **Git** for version control
 
 ---
 
-## ⚙️ How to Run
-1. **Clone the repo**:
+## ⚙️ Getting Started
+
+### 1. Clone the Repository
 ```bash
-git clone https://github.com/mohamed-ebrahim-hamed/Healthcare-Analytics-Project.git
-cd Healthcare-Analytics-Project
+git clone https://github.com/mohamed-ebrahim-hamed/Healthcare-Analytics.git
+cd Healthcare-Analytics
 ```
 
-2. **Install Python dependencies**:
+### 2. Install Python Dependencies
 ```bash
-pip install -r python_scripts/requirements.txt
+pip install pandas numpy matplotlib scikit-learn jupyter
 ```
 
-3. **Run data processing scripts**:
+### 3. Explore the Data Analysis
+Open and run the Jupyter notebook:
 ```bash
-python python_scripts/data_cleaning.py
+jupyter notebook python_scripts/Healthcare_Data_Analysis.ipynb
 ```
 
-4. **Open the Power BI file**:
-- افتح `powerbi_dashboard/healthcare_dashboard.pbix` في Power BI.
+### 4. View SQL Scripts
+Review the SQL analysis in `sql_scripts/Healthcare.sql` for database queries and data operations.
+
+### 5. Open Power BI Dashboard
+Open `powerbi_dashboard/Medical center.pbix` in Power BI Desktop to explore the interactive dashboard.
 
 ---
 
-## 📊 Dashboards & Reports
-- **KPIs**: إجمالي المرضى، إجمالي الأطباء، معدل الحضور، الإيرادات والمصروفات.
-- **Visuals**: تحليل زمني، تحليل حسب التخصص، مصروفات حسب النوع، نسب الحضور والغياب.
+## 📊 Key Features
+
+### Data Analysis
+- Patient demographics and clustering analysis
+- Doctor specialty analysis and performance metrics
+- Appointment attendance rate calculations
+- Revenue and expense tracking
+- Monthly trend analysis
+
+### Power BI Dashboard
+- **Key Performance Indicators (KPIs)**: Total patients, total doctors, attendance rates, revenue, and expenses
+- **Interactive Visualizations**: Time series analysis, specialty-based analysis, expense breakdowns, attendance patterns
+- **Real-time Insights**: Dynamic filtering and drill-down capabilities
+
+---
+
+## 🤝 Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
 
 ## 📜 License
-MIT License - Free to use and modify.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
