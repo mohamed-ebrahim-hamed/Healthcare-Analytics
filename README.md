@@ -1,63 +1,67 @@
-# 🏥 Healthcare Analytics Project
+# Healthcare Analytics Project
 
-## 📌 Overview
-مشروع تحليلات لمركز طبي يهدف إلى جمع وتنظيف وتحليل بيانات المرضى، الأطباء، المواعيد، الإيرادات والمصروفات، ثم عرضها في داشبورد تفاعلي باستخدام **Power BI** مع دعم تحليل البيانات عبر **Python** و **SQL**.
+## Overview
+This is a healthcare analytics project for a medical center. The project collects, cleans, and analyzes data about patients, doctors, appointments, revenues, and expenses. The analyzed data is displayed in an interactive dashboard using Power BI. The project also includes data analysis using Python and SQL.
 
----
-
-## 👥 Team Members
-| Name                     | Role                          | GitHub Profile |
-
-## 📂 Project Structure
+## Project Structure
 ```
-Healthcare-Analytics-Project/
-├── data_raw/                # ملفات البيانات الخام (Excel, CSV)
-├── data_processed/          # البيانات بعد المعالجة
-├── sql_scripts/              # سكربتات SQL
-├── python_scripts/           # سكربتات بايثون
-├── powerbi_dashboard/        # ملفات Power BI
-├── docs/                     # وثائق المشروع ولقطات الشاشة
-│   └── screenshots/
+Healthcare-Analytics/
+├── data_raw/                # Raw data files (Excel, CSV)
+├── data_processed/          # Processed data files
+├── sql_scripts/             # SQL scripts
+├── python_scripts/          # Python scripts
+├── powerbi_dashboard/       # Power BI files
 └── README.md
 ```
 
----
+## Main File
+The main analysis file is located at:
+- `python_scripts/Healthcare_Data_Analysis.ipynb` - This is a Jupyter notebook that contains all the data analysis steps
 
-## 🛠️ Requirements
-- Python 3.8+
-- مكتبات: `pandas`, `numpy`, `matplotlib`, `scikit-learn`
+## Requirements
+- Python 3.8 or higher
+- Python libraries: pandas, numpy, matplotlib, scikit-learn
 - Power BI Desktop
 - Git
 
----
+## Steps to Follow
 
-## ⚙️ How to Run
-1. **Clone the repo**:
+### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/mohamed-ebrahim-hamed/Healthcare-Analytics-Project.git
-cd Healthcare-Analytics-Project
+git clone https://github.com/mohamed-ebrahim-hamed/Healthcare-Analytics.git
+cd Healthcare-Analytics
 ```
 
-2. **Install Python dependencies**:
+### Step 2: Install Dependencies
 ```bash
-pip install -r python_scripts/requirements.txt
+pip install pandas numpy matplotlib scikit-learn
 ```
 
-3. **Run data processing scripts**:
+### Step 3: Run the Analysis
+Open the Jupyter notebook and run the cells:
 ```bash
-python python_scripts/data_cleaning.py
+jupyter notebook python_scripts/Healthcare_Data_Analysis.ipynb
 ```
 
-4. **Open the Power BI file**:
-- افتح `powerbi_dashboard/healthcare_dashboard.pbix` في Power BI.
+### Step 4: View the Dashboard
+Open the Power BI file located at `powerbi_dashboard/Medical center.pbix` using Power BI Desktop.
 
----
+## Project Flow
+1. Load the raw data from Excel files
+2. Clean and process the data using Python
+3. Analyze the data and create visualizations
+4. Export processed data for Power BI
+5. Build interactive dashboards in Power BI
+6. Use SQL queries for database operations
 
-## 📊 Dashboards & Reports
-- **KPIs**: إجمالي المرضى، إجمالي الأطباء، معدل الحضور، الإيرادات والمصروفات.
-- **Visuals**: تحليل زمني، تحليل حسب التخصص، مصروفات حسب النوع، نسب الحضور والغياب.
+## Dashboards and Reports
+The Power BI dashboard includes:
+- Total patients, doctors, and appointments
+- Attendance rates and no-show rates
+- Revenue and expense tracking
+- Time-based analysis
+- Analysis by medical specialty
+- Expense breakdown by category
 
----
-
-## 📜 License
+## License
 MIT License - Free to use and modify.
